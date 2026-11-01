@@ -1,0 +1,29 @@
+{
+  "registros": 244355,
+  "municipios_sin_homologar": 0,
+  "causas_sin_catalogo": 0,
+  "meses": {
+    "1": 21354,
+    "2": 17974,
+    "3": 19952,
+    "4": 19233,
+    "5": 20292,
+    "6": 20742,
+    "7": 21372,
+    "8": 21160,
+    "9": 19778,
+    "10": 20490,
+    "11": 20330,
+    "12": 21678
+  },
+  "sexo": {
+    "1": 134573,
+    "2": 109689,
+    "3": 93
+  },
+  "fuentes_sha256": {
+    "Anexo2.CodigosDeMuerte_CE_15-03-23.xlsx": "7884bd035acff7282c5f3c173d888508c15a5a11bb82f7888b89734f74dc5d7f",
+    "Divipola_CE_.xlsx": "a67f9233907b2ca257b325c2d2206a1940138b38424f986f8c072224ea60c1bc",
+    "Anexo1.NoFetal2019_CE_15-03-23.xlsx": "ea2ba442074a0b520ebabbd1f4024138065b00a42ff14b991b6252bd82c09088"
+  }
+}

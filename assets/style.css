@@ -1,0 +1,396 @@
+
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+
+html {
+    font-family: Arial, sans-serif;
+    color: #173448;
+    background: #eef3f7;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+header {
+    background: #102f44;
+    color: white;
+    padding: 36px max(24px, calc((100vw - 1360px) / 2)) 44px;
+    border-bottom: 5px solid #12a89d;
+}
+
+.eyebrow {
+    font-size: 11px;
+    letter-spacing: 2.4px;
+    color: #78d2d0;
+    margin-bottom: 20px;
+}
+
+.hero-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+h1 {
+    font-size: 36px;
+    letter-spacing: -1.3px;
+    margin: 0 0 12px;
+}
+
+.year {
+    font-weight: normal;
+    color: #7fdad0;
+    margin-left: 18px;
+}
+
+header p {
+    color: #bfcfda;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.badge {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    padding: 12px 16px;
+    border: 1px solid #456375;
+    border-radius: 7px;
+    white-space: nowrap;
+}
+
+/* =========================================
+   CONTENIDO PRINCIPAL
+========================================= */
+
+main {
+    max-width: 1408px;
+    margin: auto;
+    padding: 24px;
+}
+
+/* =========================================
+   FILTROS
+========================================= */
+
+.filters {
+    background: white;
+    border: 1px solid #dce5ed;
+    border-radius: 12px;
+    padding: 22px;
+
+    display: grid;
+    grid-template-columns: 1fr 0.65fr 1.6fr auto;
+    gap: 24px;
+    align-items: center;
+
+    box-shadow: 0 3px 10px #18334a06;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.scope {
+    font-size: 12px;
+    color: #576d7c;
+    margin: 20px 0;
+}
+
+/* =========================================
+   INDICADORES KPI
+========================================= */
+
+.kpis {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin: 0 0 24px;
+}
+
+.kpi {
+    background: white;
+    border: 1px solid #dce5ed;
+    border-radius: 12px;
+    padding: 22px;
+    border-top: 3px solid #12a89d;
+}
+
+.kpi small {
+    display: block;
+    color: #5d7484;
+    font-size: 11px;
+    letter-spacing: 1.2px;
+}
+
+.kpi strong {
+    display: block;
+    font-size: 34px;
+    margin: 12px 0 8px;
+    letter-spacing: -1px;
+}
+
+.kpi span {
+    font-size: 12px;
+    color: #63798a;
+}
+
+/* =========================================
+   CUADRÍCULA DE GRÁFICOS
+========================================= */
+
+.grid {
+    display: grid;
+
+    /* Evita que los gráficos expandan
+       las columnas indefinidamente */
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 22px;
+}
+
+.panel {
+    background: white;
+    border: 1px solid #dce5ed;
+    border-radius: 12px;
+    padding: 24px;
+    min-width: 0;
+}
+
+.wide {
+    grid-column: 1 / -1;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 0 0 10px;
+    letter-spacing: -0.4px;
+}
+
+.note {
+    font-size: 12px;
+    color: #617786;
+    line-height: 1.6;
+    min-height: 38px;
+    margin: 0 0 12px;
+}
+
+/* =========================================
+   CONTROL DE TAMAÑO DE GRÁFICOS
+   CORRECCIÓN DEL REDIMENSIONAMIENTO
+========================================= */
+
+.chart-frame {
+    width: 100%;
+    height: 390px;
+
+    min-width: 0;
+    min-height: 0;
+    max-width: 100%;
+
+    overflow: hidden;
+}
+
+/* Gráfico de mortalidad por sexo */
+
+.chart-frame--tall {
+    height: 470px;
+}
+
+/* Gráfico de distribución por edad */
+
+.chart-frame--age {
+    height: 440px;
+}
+
+/* Contenedor interno de Dash */
+
+.chart-frame .dash-graph {
+    width: 100%;
+    height: 100%;
+
+    min-width: 0;
+    min-height: 0;
+}
+
+/* Ajuste de gráficos Plotly */
+
+.js-plotly-plot {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* =========================================
+   BOTONES
+========================================= */
+
+button {
+    background: #176b91;
+    color: white;
+    border: 0;
+    border-radius: 6px;
+    padding: 12px 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #104c68;
+}
+
+button:focus-visible,
+summary:focus-visible {
+    outline: 3px solid #ebac4c;
+}
+
+#download-button {
+    margin-top: 16px;
+}
+
+/* =========================================
+   METODOLOGÍA
+========================================= */
+
+.method {
+    background: #e3edf3;
+    border-radius: 10px;
+    padding: 22px;
+    margin-top: 24px;
+    line-height: 1.7;
+    font-size: 13px;
+}
+
+.method summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.method a {
+    color: #125b80;
+}
+
+/* =========================================
+   PIE DE PÁGINA
+========================================= */
+
+footer {
+    text-align: center;
+    padding: 24px 10px;
+    font-size: 11px;
+    color: #6a7d89;
+}
+
+/* =========================================
+   DISEÑO RESPONSIVE - TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .filters {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .kpis {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-row {
+        display: block;
+    }
+
+    .badge {
+        display: none;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .wide {
+        grid-column: auto;
+    }
+}
+
+/* =========================================
+   DISEÑO RESPONSIVE - MÓVIL
+========================================= */
+
+@media (max-width: 540px) {
+
+    main {
+        padding: 12px;
+    }
+
+    .filters {
+        grid-template-columns: 1fr;
+        padding: 18px;
+    }
+
+    .panel {
+        padding: 14px;
+    }
+
+    .kpi {
+        padding: 16px;
+    }
+
+    .kpi strong {
+        font-size: 28px;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+
+    .year {
+        display: block;
+        margin: 8px 0 0;
+    }
+}
+
+
+
+.chart-frame {
+    height: 390px;
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* Grafico de mortalidad por sexo */
+.chart-frame--tall {
+    height: 470px;
+}
+
+/* Grafico por grupos de edad */
+.chart-frame--age {
+    height: 440px;
+}
+
+/* Ajuste interno de Dash */
+.chart-frame .dash-graph {
+    height: 100%;
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+}
