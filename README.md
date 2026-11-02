@@ -148,15 +148,35 @@ El gráfico organiza la variable `GRUPO_EDAD1` en las categorías solicitadas pa
 - La categoría X95 es una selección específica de causas externas y no equivale a todos los homicidios.
 - Se conserva la categoría de sexo indeterminado y la de edad desconocida cuando están presentes.
 
+
 ## 10. Evidencias gráficas
 
-El repositorio contiene un **informe HTML complementario** con sus propias visualizaciones y la siguiente captura ilustrativa:
+### Aplicación web desplegada en Render
 
-![Captura del informe complementario](docs/Informe_captura.jpg)
+La siguiente captura muestra el dashboard interactivo
+desarrollado con Python, Dash y Plotly, publicado
+en la plataforma Render.
 
-Para documentar específicamente el funcionamiento de la **aplicación Dash desplegada**, agregar capturas reales de la URL pública en la carpeta `docs/capturas/` e insertarlas aquí. Se recomienda mostrar la vista general, el mapa, los gráficos mensuales, los rankings, la tabla de causas, la comparación por sexo, los grupos de edad y una selección filtrada por departamento.
+![Dashboard publicado en Render](docs/Dashboard_Render.png)
 
-La imagen del informe complementario no sustituye las capturas de la aplicación en Render.
+La interfaz permite filtrar los registros por departamento,
+sexo y periodo mensual. Para el total nacional de 2019,
+se identificaron 244.355 defunciones, distribuidas en
+1.110 municipios con registros homologados.
+
+También se identificaron 9.273 defunciones asociadas
+al código X95 y 23 registros con edad desconocida.
+
+### Informe gráfico complementario
+
+Se incluye una captura del informe de visualizaciones
+que reúne los siete análisis solicitados en la actividad.
+
+![Informe de mortalidad Colombia 2019](docs/Informe_captura.jpg)
+
+Ambas evidencias complementan la interpretación de los
+resultados presentada en el apartado 8 del documento.
+
 
 ## 11. Fuentes
 
