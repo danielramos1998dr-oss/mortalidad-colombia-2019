@@ -1,6 +1,6 @@
 # Mortalidad en Colombia 2019 — Dashboard interactivo
 
-**Autor:** Daniel Ramos  
+**Autor:** Edwyn Daniel Ramos Camayo
 **Aplicación web:** https://mortalidad-colombia-2019-4s76.onrender.com  
 **Repositorio:** https://github.com/danielramos1998dr-oss/mortalidad-colombia-2019
 
@@ -168,4 +168,4 @@ La imagen del informe complementario no sustituye las capturas de la aplicación
 
 ---
 
-**Desarrollado por Daniel Ramos — 2026.**
+**Desarrollado por Edwyn Daniel Ramos — 2026.**
